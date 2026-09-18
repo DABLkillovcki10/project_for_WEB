@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Задание номер 1</title>
+    <style>
+        a:link { 
+            color: rgb(0, 17, 255); 
+        }
+        a:visited { 
+            color: rgb(255, 0, 0); 
+        }
+        a:hover { 
+            color: rgb(255, 0, 221); 
+        }
+        a:active { 
+            color: aquamarine; 
+        }
+        a {
+            text-decoration: none;
+        }
+        body{
+            width: 100%;
+            background-color: forestgreen;
+            display: grid;
+        }
+        .all{
+            width: 95%;
+            margin-left: 2.5%;
+            background-color: aquamarine;
+            border-radius: 32px;
+            border: solid 2px black;
+        }
+        .hello{
+            display: grid;
+            justify-content:center;
+            font-size: 80px;
+        }
+        .ml{
+            width: 97.5%;
+            margin-left: 2.5%;
+            font-size: 30px;
+        }
+        .first_text{
+            font-size: 40px;
+        }
+        .imaga{
+            width: 13%;
+        }
+        footer {
+            margin-top: 5rem;
+        }
+        .mipo{
+            display: grid;
+            justify-content: center;
+        }
+    </style>
+</head>
+<body>
+    <header class="all">
+        <h1 class="hello">Сайт для первого задания</h1>
+    </header>
+    <main class="all" style="margin-top: 6rem;">
+        <div class="ml">
+            <p class="first_text">Вот список гиперссылок, которые нужны:</p>
+            <a href="http://kubsu.ru/index.html?ysclid=mtscsx1rft792456047">Ссылка на сайт КубГУ</a><br>
+            <a href="https://kubsu.ru/index.html?ysclid=mtscsx1rft792456047">Ссылка на сайт КубГУ, но https</a><br>
+            <a href="https://kubsu.ru/index.html?ysclid=mtscsx1rft792456047"><img src="https://avatars.mds.yandex.net/i?id=58459549003fc6e375fbc6b41c9d4a06_l-9706270-images-thumbs&n=13" class="imaga"></a><br>
+            <a href="https://kubsu.ru">Сокращенная ссылка</a><br>
+            <a href="https://kubsu.ru">Сокращённая на главную</a><br>
+            <a href="#qwe">На фрагмент текущей страницы</a><br>
+            <a href="https://example.com/landing?utm_source=yandex&utm_medium=cpc&utm_campaign=spring_sale">С тремя параметрами в URL</a><br>
+            <a href="https://example.com/page?id=123">С параметром id в URL</a><br>
+            <p>Относительные ссылки:</p>
+            <ol>
+                <li><a href="in_that_katalog.html">Относительную в текущем каталоге</a></li>
+                <li><a href="about/about.html">Oтносительную на страницу в каталоге about</a><br></li>
+                <li><a href="for_high/for_high.html">Oтносительную на страницу в каталоге уровнем выше текущего</a><br></li>
+                <li><a href="for_high/for_higher/for_higher.html">Oтносительную на страницу в каталоге двумя уровнями выше</a><br></li>
+            </ol>
+            <p>Наипрекраснейший текст, в котором есть <a href="https://kubsu.ru/index.html?ysclid=mtscsx1rft792456047">ссылка, </a>кстати она очень красивая</p><br>
+            <a href="https://kubsu.ru/lib/images/Frame1217_1.png">На что-то из другого сайта</a><br>
+            
+            <div class="mipo"><img src="For_mapa.bmp" alt="qwerty1" usemap="#myMap" width="400" height="400">
+                <map name="myMap">
+                    <area shape="rect" coords="20, 60, 180, 140" href="https://kubsu.ru/index.html?ysclid=mtscsx1rft792456047" alt="На сайт" title="О нет меня нашли">
+                </map>
+            </div>
+            <a href="" style="color: red;"></a>Ссылка с пустым href<br>
+            <a style="color: red;">Ссылка без href</a><br>
+            <a href="https://example.com" rel="nofollow">Ссылка nofollow</a><br>
+            <noindex>
+                <p>Данный текст не будет индексироваться</p>
+            </noindex><br>
+            <p>Кстати, список был выше</p><br>
+            <a href="auto.html">Ссылка на форму</a>
+        </div>
+    </main>
+    <footer class="all">
+        <h1 class="hello" id="qwe">Часть на которую ссылается</h1>
+    </footer>
+</body>
+</html>
