@@ -48,7 +48,7 @@
             <input class="blank1" type="text" id="q"></p>
 
             <p>Введите Телефон:
-            <input class="blank1" id="digits" type="text" inputmode="numeric"></p>
+            <input class="blank1" id="digits" type="number"></p>
             <script>
                 const input = document.getElementById('q');
                 input.addEventListener("input", () => {input. value = input.value.replace(/[^A-Za-zА-Яф-яЁё\s]/g, '');});
