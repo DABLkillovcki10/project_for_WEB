@@ -45,11 +45,13 @@
     <main class="all" style="margin-top: 6rem;">
         <form action="URL_отправки_данных" method="post" enctype="text/plain">
             <p>Введите ФИО:
-            <input class="blank1" id="digits"></p>
+            <input class="blank1" id="q"></p>
 
             <p>Введите Телефон:
-            <input class="blank1" type="number"></p>
+            <input class="blank1" type="text" inputmode="numeric"></p>
             <script>
+                const input = document.getElementById('q');
+                input.addEventListener("input", () => {input. value = input.value.replace(/[^A-Za-zА-Яф-яЁё\s]/g, '');});
                 document.getElementById('digits').addEventListener('input', e =>{e.target.valye = e.target.valye.replace(/\D/g, '');}); 
             </script>
             <p>Текстовое поле email:
